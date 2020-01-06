@@ -19,7 +19,7 @@ input, textarea
 *
 	box-sizing: border-box
 	font-family: 'Cuprum', sans-serif
-	font-size: 25px
+	font-size: 20px
 	font-weight: normal
 	font-style: normal
 	line-height: 1.65
@@ -57,10 +57,56 @@ button, input[type="button"]
 .header_top, .header_bottom
 	background-color: $colorBlue
 
+.container
+	max-width: calc(1960px - 392px)
 
+header
+	display: grid
+	grid-template-columns: 1fr
+	grid-template-rows: 80px 240px 100px
+	.header_top .container
+		display: grid
+		grid-template-columns: repeat(2, 1fr)
+		color: $colorA
+	.header_middle
+		display: grid
+		align-items: center
+		.container
+			display: grid
+			grid-template-columns: 28% 1fr 1fr
+	.header_bottom
+		display: grid
+		align-items: center
+		.container
+			display: grid
+			grid-template-columns: 28% 1fr
+			.header_menu ul
+				display: flex
 
-
-
+main
+	display: grid
+	grid-template-columns: 1fr
+	grid-template-rows: repeat(4, auto)
+	.container
+		display: grid
+		grid-template-columns: repeat(4, minmax(auto, 392px))
+		grid-template-rows: repeat(2, auto)
+		#commercial_slider
+			grid-column: 2 / 3
+		.commercial_board
+			grid-column: 3 / 4
+	.service
+		background-color: $colorBlue
+		color: $text
+		.container
+			display: grid
+			grid-template-columns: repeat(4, 1fr)
+			grid-template-rows: 228px
+			align-items: center
+	.slider
+		display: grid
+		grid-template-columns: 1fr
+		grid-template-rows: 350px
 
 
 
