@@ -79,13 +79,7 @@ header
 			grid-column: 4 / 5
 			display: flex
 			justify-content: space-between
-		+media-breakpoint-between(895px, 1156px)
-			grid-template-columns: 1fr 1fr
-			.header_contact
-				grid-column: 1 / 2
-			.header_select
-				grid-column: 2 / 3
-		+media-breakpoint-between(sm, 895px)
+		+media-breakpoint-only(md) // (min-width: 768px) and (max-width: 991px)
 			grid-template-columns: 1fr 1fr
 			.header_contact
 				display: grid
@@ -97,7 +91,18 @@ header
 		align-items: center
 		.container
 			display: grid
-			grid-template-columns: 28% 1fr 1fr
+			grid-template-columns: repeat(4, minmax(auto, 392px))
+			grid-template-rows: 240px
+			align-items: center
+			.header_logo
+				grid-column: 1 / 2
+				svg
+					width: 90%
+			.header_search
+				grid-column: 2 / 4
+				display: flex
+			.header_cart
+				justify-self: end
 	.header_bottom
 		display: grid
 		align-items: center
@@ -115,6 +120,29 @@ header
 	max-width: 100%
 	option
 		color: $colorBlue
+
+.header_middle
+	.header_search
+		.select_search
+		select
+			width: 250px
+			height: 70px
+			background: none
+			border: 2px solid darken($text, 20%)
+		input
+			width: 53%
+			height: 70px
+			background: none
+			border: 2px solid darken($text, 20%)
+		button
+			width: 15%
+			color: $colorWhite
+	.header_cart
+		button
+			height: 70px
+			color: $colorWhite
+			svg
+				margin-right: 10px
 
 main
 	display: grid

@@ -14,3 +14,71 @@ $gutter: $grid-gutter-width
 // // Example: +media-breakpoint-down(xs) - ≥576px / +media-breakpoint-up(sm) - // ≤576px
 // // Default variables: node_modules/bootstrap/scss/_variables.scss
 // $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px)
+
+// ------------------------ Разметка media-breakpoint-... -------------------
+// Дополнительные небольшие устройства (портрет телефонах, менее 544px) Нет медиа запросов, так как это по умолчанию в Bootstrap
+// Небольших устройств (телефоны альбомной ориентации, 544px и вверх)
+//@media (min-width: 544px) { ... }
+// Устройствах среднего (планшеты, 768px и выше)
+//@media (min-width: 768px) { ... }
+// Крупных устройств (настольные компьютеры, 992px и выше)
+//@media (min-width: 992px) { ... }
+// Очень больших устройств (большие компьютеры, 1200px и выше)
+//@media (min-width: 1200px) { ... }
+
+//Так как мы пишем наш источник CSS в Sass, Все медиа запросы доступны через Sass примеси:
+//
+//@include media-breakpoint-up(xs) { ... }
+//@include media-breakpoint-up(sm) { ... } (min-width: 544px)
+//@include media-breakpoint-up(md) { ... } (min-width: 768px)
+//@include media-breakpoint-up(lg) { ... } (min-width: 992px)
+//@include media-breakpoint-up(xl) { ... } (min-width: 1200px)
+
+
+// Очень малые устройства (портрет телефонов, менее 544px)
+//@media (max-width: 543px) { ... }
+// Небольших устройств (альбомной телефонов, меньше, чем 768px по)
+//@media (max-width: 767px) { ... }
+// Устройствах среднего (планшеты, меньше, чем 992px)
+//@media (max-width: 991px) { ... }
+// Крупных устройств (настольных компьютеров, меньше 1200px)
+//@media (max-width: 1199px) { ... }
+
+// Очень крупных устройств (большие компьютеры)
+// No media query since the extra-large breakpoint has no upper bound on its width
+
+//В очередной раз эти медиа запросы через Sass примеси:
+
+//@include media-breakpoint-down(xs) { ... } (max-width: 543px)
+//@include media-breakpoint-down(sm) { ... } (max-width: 767px)
+//@include media-breakpoint-down(md) { ... } (max-width: 991px)
+//@include media-breakpoint-down(lg) { ... } (max-width: 1199px)
+
+
+// Очень малые устройства (портрет телефонов, менее 544px)
+//@media (max-width: 543px) { ... }
+// Небольших устройств (альбомной телефоны, 544px и вверх)
+//@media (min-width: 544px) and (max-width: 767px) { ... }
+// Устройствах среднего (планшеты, 768px и выше)
+//@media (min-width: 768px) and (max-width: 991px) { ... }
+// Крупных устройств (настольных компьютеров, 992px и выше)
+//@media (min-width: 992px) and (max-width: 1199px) { ... }
+// Очень больших устройств (большие компьютеры, 1200px и выше)
+//@media (min-width: 1200px) { ... }
+//
+//Эти медиа запросы через Sass примеси:
+//
+//+media-breakpoint-only(xs) { ... } (max-width: 543px)
+//+media-breakpoint-only(sm) { ... } (min-width: 544px) and (max-width: 767px)
+//+media-breakpoint-only(md) { ... } (min-width: 768px) and (max-width: 991px)
+//+media-breakpoint-only(lg) { ... } (min-width: 992px) and (max-width: 1199px)
+//+media-breakpoint-only(xl) { ... } (min-width: 1200px)
+
+
+// Пример, Средних устройствах (планшеты, 768px и выше) и больших устройств (настольных компьютеров, 992px и выше)
+
+//@media (min-width: 768px) and (max-width: 1199px) { ... }
+//
+//В Sass mixin Для приведенного выше примера выглядят, как показано ниже:
+//
+//@include media-breakpoint-between(md, lg) { ... } (768px , 1199px)
