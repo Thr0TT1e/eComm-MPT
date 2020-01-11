@@ -6,8 +6,8 @@
 	color: #666
 
 ::selection
-	background-color: $accent
-	color: #fff
+	background-color: $colorGreen
+	color: $colorWhite
 
 input, textarea
 	outline: none
@@ -19,7 +19,7 @@ input, textarea
 *
 	box-sizing: border-box
 	font-family: 'Cuprum', sans-serif
-	font-size: 20px
+	font-size: 25px
 	font-weight: normal
 	font-style: normal
 	line-height: 1.65
@@ -52,13 +52,12 @@ ul, li
 button, input[type="button"]
 	background-color: $colorGreen
 	border: none
+	&:hover
+		background: darken($colorGreen, 10%)
 	
 // Custom Sass / Remove before use
 .header_top, .header_bottom
 	background-color: $colorBlue
-
-//.container
-	max-width: calc(1960px - 392px)
 
 header
 	display: grid
@@ -73,6 +72,7 @@ header
 		.header_contact
 			display: flex
 			grid-column: 1 / 3
+			justify-content: space-around
 			div:first-child
 				margin-right: 10px
 		.header_select
@@ -97,12 +97,15 @@ header
 			.header_logo
 				grid-column: 1 / 2
 				svg
-					width: 90%
+					width: 92%
 			.header_search
 				grid-column: 2 / 4
 				display: flex
 			.header_cart
 				justify-self: end
+				svg
+					width: 37px
+					fill: $colorA
 	.header_bottom
 		display: grid
 		.container
@@ -124,12 +127,12 @@ header
 						margin-right: 20px
 
 
-
 .header_top select
 	color: $colorA
 	background: none
 	border: none
 	max-width: 100%
+	appearance: none
 	option
 		color: $colorBlue
 
@@ -137,25 +140,88 @@ header
 	.header_search
 		.select_search
 		select
-			width: 250px
+			width: 15vw
 			height: 70px
 			background: none
 			border: 2px solid darken($text, 20%)
+			appearance: none
+			padding: 0 10px
 		input
-			width: 53%
+			width: 30vw
 			height: 70px
 			background: none
 			border: 2px solid darken($text, 20%)
 			margin-left: -2px
+			padding: 0 15px
 		button
-			width: 15%
+			width: 10vw
 			color: $colorWhite
 	.header_cart
 		button
 			height: 70px
 			color: $colorWhite
 			svg
-				margin-right: 10px
+				margin-right: 8px
+
+#header_phone
+	position: relative
+	&::before
+		font-family: Icomoon
+		position: absolute
+		content: "\e903"
+		left: -1.1em
+
+#header_mail
+	position: relative
+	&::before
+		font-family: Icomoon
+		position: absolute
+		content: "\e904"
+		left: -1.1em
+
+#select_money
+	margin-right: 5px
+	position: relative
+	&::after
+		position: absolute
+		font-family: 'Icomoon'
+		font-size: 33px
+		content: "\e901"
+		left: 84%
+		top: -7px
+		transform: rotate(90deg)
+#select_account
+	position: relative
+	&::after
+		position: absolute
+		font-family: 'Icomoon'
+		font-size: 33px
+		content: "\e901"
+		left: 78%
+		top: -7px
+		transform: rotate(90deg)
+
+.select_search
+	position: relative
+	&::after
+		position: absolute
+		font-family: 'Icomoon'
+		font-size: 33px
+		content: "\e901"
+		left: 84%
+		top: 7%
+		transform: rotate(90deg)
+#bottom_button-inner
+	position: relative
+	&::after
+		position: absolute
+		font-family: 'Icomoon'
+		font-size: 33px
+		content: "\e901"
+		left: 84%
+		top: 20%
+		transform: rotate(90deg)
+
 
 
 main
@@ -165,20 +231,23 @@ main
 	.container
 		display: grid
 		grid-template-columns: repeat(4, minmax(auto, 392px))
-		grid-template-rows: repeat(2, auto)
+		//grid-template-rows: repeat(2, minmax(0, 350px))
 		#commercial_slider
 			grid-column: 2 / 4
 			grid-row: 1 / 3
 			img
-				width: 784px
+				width: 100%
+				height: auto
 		.commercial_board
 			grid-column: 4 / 5
 			img
-				//width: 392px
-				//height: 350px
+				width: 100%
+				height: auto
 	.service
 		background-color: $colorBlue
 		color: $text
+		text-transform: capitalize
+		font-size: 26px
 		.container
 			display: grid
 			grid-template-columns: repeat(4, minmax(auto, 392px))

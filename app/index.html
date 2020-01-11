@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>Главная</title>
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
+<!--    <link rel="stylesheet" href="css/font-style.css" type="text/css">-->
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slick.css" type="text/css">
+    <link rel="stylesheet" href="css/slick-theme.css" type="text/css">
     <link rel="stylesheet" href="css/styles.min.css" type="text/css">
     <link rel="icon" href="img/favicon.png">
 </head>
@@ -12,8 +16,8 @@
     <div class="header_top">
         <div class="container">
             <div class="header_contact">
-                <div>Контактный телефон: <a href="tel:+79190000000" id="header_phone">+7 (919) 000-00-00</a> </div>
-                <div>Почта: <a href="mailto:shop@gmail.com" id="header_mail">shop@gmail.com</a></div>
+                <div id="header_phone">Контактный телефон: <a href="tel:+79190000000">+7 (919) 000-00-00</a> </div>
+                <div id="header_mail">Почта: <a href="mailto:shop@gmail.com">shop@gmail.com</a></div>
             </div>
             <div class="header_select">
                 <div class="select_container">
@@ -72,15 +76,8 @@
             </div>
             <div class="header_cart">
                 <button id="header_search-button">
-                    <svg width="40" height="30" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.5548 21.7419C16.9448 21.7419 15.6464 22.7145 15.6464 23.9232C15.6464 25.1244 16.9448 26.1 18.5548 26.1C20.158 26.1 21.4639 25.1244 21.4639 23.9232C21.4639 22.7145 20.158 21.7419 18.5548 21.7419Z"
-                              fill="#F9F9F9"/>
-                        <path d="M30.4084 21.7419C28.8012 21.7419 27.5004 22.7145 27.5004 23.9232C27.5004 25.1244 28.8011 26.1 30.4084 26.1C32.0116 26.1 33.3156 25.1244 33.3156 23.9232C33.3156 22.7145 32.0116 21.7419 30.4084 21.7419Z"
-                              fill="#F9F9F9"/>
-                        <path d="M32.782 12.0384H16.1764L16.8392 13.6749H32.1244L32.782 12.0384Z" fill="#F9F9F9"/>
-                        <path d="M30.8048 16.9425L31.4639 15.309H17.5016L18.1632 16.9425H30.8048Z" fill="#F9F9F9"/>
-                        <path d="M14.55 7.99502L15.5116 10.4064H35.6664L32.3804 18.5682H16.5916L10.6671 3.90002H0V6.29311H8.27521L14.2131 20.9781H34.7484L40 7.99502H14.55Z"
-                              fill="#F9F9F9"/>
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M7.172 14.766q0 0.234 0.234 0.234h11.578v2.016h-12q-0.797 0-1.383-0.609t-0.586-1.406q0-0.469 0.234-0.938l1.359-2.484-3.609-7.594h-2.016v-1.969h3.281q0.938 1.969 1.875 3.984 0.234 0.422 1.078 2.227t1.313 2.789h7.031q3.516-6.375 3.844-7.031l1.734 0.984-3.844 6.984q-0.563 1.031-1.734 1.031h-7.453l-0.891 1.641zM17.016 18q0.797 0 1.383 0.609t0.586 1.406-0.586 1.383-1.383 0.586-1.406-0.586-0.609-1.383 0.609-1.406 1.406-0.609zM6.984 18q0.797 0 1.406 0.609t0.609 1.406-0.609 1.383-1.406 0.586-1.383-0.586-0.586-1.383 0.586-1.406 1.383-0.609zM11.016 9v-3h-3v-2.016h3v-3h1.969v3h3v2.016h-3v3h-1.969z"></path>
                     </svg>
                     0 товар(ов) - &#8381 0.00
                 </button>
@@ -108,19 +105,24 @@
 <main>
     <div class="commercial">
         <div class="container">
+<!--            <div class="commercial_for-modal"></div>-->
             <div id="commercial_slider">
                 <div id="commercial_slider-inner">
-                    <img src="img/_src/commer_3.png" alt="Слайдер">
+                    <img src="img/_src/commercial/notebook.png" alt="Слайдер">
+                    <img src="img/_src/commercial/device.png" alt="Слайдер">
+                    <img src="img/_src/commercial/all_device.png" alt="Слайдер">
                 </div>
             </div>
             <div class="commercial_board">
                 <div class="commercial_board-inner">
-                    <img src="img/_src/commer_1.png" alt="Nokia 8.1">
+                    <img src="img/_src/commercial/huawei.png" alt="Nokia 8.1">
+                    <img src="img/_src/commercial/huawei_p30.png" alt="Nokia 8.1">
                 </div>
             </div>
             <div class="commercial_board">
                 <div class="commercial_board-inner">
-                    <img src="img/_src/commer_2.png" alt="Huawei Mate20 Pro">
+                    <img src="img/_src/commercial/huawei_p30.png" alt="Huawei Mate20 Pro">
+                    <img src="img/_src/commercial/huawei.png" alt="Huawei Mate20 Pro">
                 </div>
             </div>
         </div>
@@ -128,20 +130,20 @@
     <div class="service">
         <div class="container">
             <div class="service_content item1">
-                <div class="service_item-title">Специальные Подарочные Карты</div>
-                <div class="service_item-desc">Сделать Идеальный Подарок</div>
+                <div class="service_item-title">специальные подарочные карты</div>
+                <div class="service_item-desc">сделать идеальный подарок</div>
             </div>
             <div class="service_content item2">
-                <div class="service_item-title">Безопасная Оплата</div>
-                <div class="service_item-desc">100% Безопасный Платеж</div>
+                <div class="service_item-title">безопасная оплата</div>
+                <div class="service_item-desc">100% безопасный платеж</div>
             </div>
             <div class="service_content item3">
-                <div class="service_item-title">Круглосуточная Поддержка</div>
-                <div class="service_item-desc">Онлайн Поддержка 24/7</div>
+                <div class="service_item-title">круглосуточная поддержка</div>
+                <div class="service_item-desc">онлайн поддержка 24/7</div>
             </div>
             <div class="service_content item4">
-                <div class="service_item-title">Бесплатная Доставка</div>
-                <div class="service_item-desc">На Заказ Свыше 3 000&#8381</div>
+                <div class="service_item-title">бесплатная доставка</div>
+                <div class="service_item-desc">на заказ свыше 3 000&#8381</div>
             </div>
         </div>
     </div>
@@ -210,7 +212,7 @@
             <section class="product_card">
                 <div class="product_menu menu-1">
                     <div class="product_menu-title"></div>
-                    <a href="" class="product_menu-view">Смотреть все</a></div>
+                    <a href="#" class="product_menu-view">Смотреть все</a></div>
                 <div class="product_item">
                     <div class="product_item-sale">
                         <p>20%</p>
@@ -228,7 +230,7 @@
             <section class="product_card">
                 <div class="product_menu menu-1">
                     <div class="product_menu-title"></div>
-                    <a href="" class="product_menu-view">Смотреть все</a></div>
+                    <a href="#" class="product_menu-view">Смотреть все</a></div>
                 <div class="product_item">
                     <div class="product_item-sale">
                         <p>20%</p>
@@ -246,7 +248,7 @@
             <section class="product_card">
                 <div class="product_menu menu-1">
                     <div class="product_menu-title"></div>
-                    <a href="" class="product_menu-view">Смотреть все</a></div>
+                    <a href="#" class="product_menu-view">Смотреть все</a></div>
                 <div class="product_item">
                     <div class="product_item-sale">
                         <p>20%</p>
@@ -265,9 +267,62 @@
     </div>
 </main>
 <footer>
-    <div class="container">
-
+    <div class="footer_subscription">
+        <div class="container">
+            <div id="subscription_text">
+                <div id="subscription_inscription"></div>
+                <div id="subscription_signature"></div>
+            </div>
+            <div id="subscription_field">
+                <input type="text" placeholder="Введи свою почту...">
+                <input type="button" value="Подпишись">
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div class="container">
+            <section class="footer_menu">
+                <div class="footer_menu-title">
+                    <div class="footer_menu-nav"><a href="#"></a></div>
+                </div>
+            </section>
+            <section class="footer_menu">
+                <div class="footer_menu-title">
+                    <div class="footer_menu-nav"><a href="#"></a></div>
+                </div>
+            </section>
+            <section class="footer_menu">
+                <div class="footer_menu-title">
+                    <div class="footer_menu-nav"><a href="#"></a></div>
+                </div>
+            </section>
+            <section class="footer_menu">
+                <div class="footer_menu-title">
+                    <div class="footer_menu-nav"><a href="#"></a></div>
+                </div>
+            </section>
+        </div>
+    </nav>
+    <div class="footer_info">
+        <div class="container">
+            <div id="programmer">
+                <div id="programmer_text"></div>
+                <div id="programmer_name"></div>
+            </div>
+            <div id="social_networks">
+                <input type="button" id="social_network item-1">
+                <input type="button" id="social_network item-2">
+                <input type="button" id="social_network item-3">
+                <input type="button" id="social_network item-4">
+            </div>
+            <button id="button_up"></button>
+        </div>
     </div>
 </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/scripts.min.js"></script>
 </body>
 </html>

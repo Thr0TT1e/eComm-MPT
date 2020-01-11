@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/_src/icomoon/icomoon.eot?ny8f9i');
+  src:  url('../fonts/_src/icomoon/icomoon.eot?ny8f9i#iefix') format('embedded-opentype'),
+    url('../fonts/_src/icomoon/icomoon.ttf?ny8f9i') format('truetype'),
+    url('../fonts/_src/icomoon/icomoon.woff?ny8f9i') format('woff'),
+    url('../fonts/_src/icomoon/icomoon.svg?ny8f9i#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-play_arrow:before {
+  content: "\e901";
+}
+.icon-fiber_manual_record:before {
+  content: "\e902";
+}
+.icon-call:before {
+  content: "\e903";
+}
+.icon-emailmailmarkunreadlocal_post_office:before {
+  content: "\e904";
+}
+.icon-location_onplaceroom:before {
+  content: "\e905";
+}
+.icon-mail_outline:before {
+  content: "\e906";
+}
+.icon-alternate_email:before {
+  content: "\e907";
+}
+.icon-computerlaptop:before {
+  content: "\e908";
+}
+.icon-desktop_mac:before {
+  content: "\e909";
+}
+.icon-desktop_windows:before {
+  content: "\e90a";
+}
+.icon-phone_android:before {
+  content: "\e90b";
+}
+.icon-phone_iphone:before {
+  content: "\e90c";
+}
+.icon-panorama_fish_eyeradio_button_unchecked:before {
+  content: "\e90d";
+}
+.icon-remove_red_eyevisibility:before {
+  content: "\e90e";
+}
+.icon-local_grocery_storeshopping_cart:before {
+  content: "\e900";
+}
+.icon-location_history:before {
+  content: "\e90f";
+}
+.icon-person:before {
+  content: "\e910";
+}
+.icon-person_outlineperm_identity:before {
+  content: "\e911";
+}
+.icon-check_box:before {
+  content: "\e912";
+}
+.icon-check_box_outline_blank:before {
+  content: "\e913";
+}
+.icon-star_outline:before {
+  content: "\e914";
+}
+.icon-add_shopping_cart:before {
+  content: "\e915";
+}
+.icon-favorite:before {
+  content: "\e916";
+}
+.icon-favorite_outline:before {
+  content: "\e917";
+}
+.icon-shopping_basket:before {
+  content: "\e918";
+}
