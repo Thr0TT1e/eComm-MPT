@@ -1,0 +1,86 @@
+.slick-btn
+  font-family: Icomoon
+  font-size: 50pt
+  width: 20px
+  height: 100%
+  //position: absolute
+  //z-index: 1
+  background: none
+  color: $colorGreen
+  &:hover
+    background: transparent
+    color: darken($colorGreen, 10%)
+
+.slick-next
+  //margin-left: 35px
+  //padding-left: 25px
+  &::before
+    //margin-left: 50%
+    content: "\e901"
+
+.slick-prev
+  transform: rotate(180deg)
+  //margin-left: -35px
+  //padding-right: 25px
+  &::before
+    content: "\e901"
+    //left: 10%
+    &:hover
+      transform: scale(1.5)
+
+
+.slick-dots
+  position: absolute
+  bottom: 10px
+  display: block
+  width: 100%
+  padding: 0
+  margin: 0
+  list-style: none
+  text-align: center
+  li
+    position: relative
+    display: inline-block
+    width: 20px
+    height: 20px
+    margin: 0 5px
+    padding: 0
+    cursor: pointer
+    button
+      font-size: 0
+      line-height: 0
+      display: block
+      width: 20px
+      height: 20px
+      padding: 5px
+      cursor: pointer
+      color: transparent
+      border: 0
+      outline: none
+      background: transparent
+      &:hover,
+      &:focus
+        outline: none
+      &:hover:before,
+      &:focus:before
+        opacity: 1
+      &:before
+        font-family: 'Icomoon'
+        font-size: 16px
+        font-weight: bold
+        line-height: 20px
+        position: absolute
+        top: 0
+        left: 0
+        width: 25px
+        height: 25px
+        content: '\e90d'
+        text-align: center
+        color: hsla(243, 49%, 16%, 1)
+
+.slick-dots li.slick-active button:before
+  opacity: 1
+  color: black
+  content: "\e902"
+  color: hsla(123, 47%, 48%, 1)
+  font-size: 22px

@@ -7,7 +7,7 @@
 <!--    <link rel="stylesheet" href="css/font-style.css" type="text/css">-->
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" type="text/css">
     <link rel="stylesheet" href="css/slick.css" type="text/css">
-    <link rel="stylesheet" href="css/slick-theme.css" type="text/css">
+<!--    <link rel="stylesheet" href="css/slick-theme.css" type="text/css">-->
     <link rel="stylesheet" href="css/styles.min.css" type="text/css">
     <link rel="icon" href="img/favicon.png">
 </head>
@@ -91,6 +91,9 @@
             </div>
             <div class="header_menu">
                 <nav>
+                    <div class="nav_button-menu">
+                        <span class="icon-favorite"></span>
+                    </div>
                     <ul>
                         <li><a href="#">Главная</a></li>
                         <li><a href="#">Распродажи</a></li>
@@ -129,21 +132,54 @@
     </div>
     <div class="service">
         <div class="container">
-            <div class="service_content item1">
-                <div class="service_item-title">специальные подарочные карты</div>
-                <div class="service_item-desc">сделать идеальный подарок</div>
+            <div class="service_content">
+                <div class="service_content-item">
+                    <svg width="65" height="63" viewBox="0 0 65 63" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M62.5456 15.5891H44.6995L48.7773 13.631C49.0162 13.5202 49.2351 13.3663 49.4257 13.1815C50.9274 11.7246 51.7547 9.78217 51.7547 7.7212C51.7547 5.65588 50.9282 3.71857 49.4257 2.2566C46.3222 -0.750763 41.2806 -0.750763 38.1785 2.2566C38.0101 2.422 37.8676 2.61041 37.7556 2.81392L32.0745 13.0557L26.3941 2.81464C26.2814 2.61113 26.1382 2.42272 25.9697 2.26092C22.8691 -0.753639 17.8246 -0.753639 14.7247 2.26092C11.6241 5.27187 11.6241 10.1706 14.7247 13.1815C14.9132 13.3663 15.1336 13.5202 15.371 13.631L19.4487 15.5891H2.45363C1.09883 15.5891 0 16.6577 0 17.9723V32.1188C0 33.4341 1.09883 34.5006 2.45363 34.5006H5.28862V59.8661C5.28862 61.1814 6.38671 62.2471 7.74225 62.2471H57.4106C58.7647 62.2471 59.865 61.1828 59.865 59.8661V34.5006H62.5456C63.9004 34.5006 65.0007 33.4355 65.0007 32.1188V17.9723C64.9985 16.6577 63.9004 15.5891 62.5456 15.5891ZM29.8739 57.4822V34.5006H35.1877V57.4829H29.8739V57.4822ZM35.2322 29.7357H29.9206V20.3569H35.2322V29.7357ZM41.8749 5.42577C43.0709 4.48012 44.8412 4.54484 45.9556 5.62928C46.5306 6.1866 46.8482 6.92945 46.8482 7.7212C46.8482 8.39717 46.6167 9.04007 46.1856 9.56359L37.1873 13.8812L41.8749 5.42577ZM18.1934 5.62928C19.2684 4.58368 21.1077 4.50313 22.2719 5.42577L26.9587 13.8812L17.9611 9.56359C17.0114 8.40221 17.0886 6.70221 18.1934 5.62928ZM4.90503 20.3569H25.0134V29.7357H4.90503V20.3569ZM10.1937 34.5006H27.4217V57.4829H10.1937V34.5006ZM54.9585 57.4822H37.6391V34.5006H54.9585V57.4822ZM60.0942 29.7357H40.1395V20.3569H60.095V29.7357H60.0942Z"/>
+                    </svg>
+                </div>
+                <div class="content_title">
+                    <div class="service_item-title">специальные подарочные карты</div>
+                    <div class="service_item-desc">сделать идеальный подарок</div>
+                </div>
             </div>
-            <div class="service_content item2">
-                <div class="service_item-title">безопасная оплата</div>
-                <div class="service_item-desc">100% безопасный платеж</div>
+            <div class="service_content">
+                <div class="service_content-item">
+                    <svg width="68" height="62" viewBox="0 0 68 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M67.6586 28.8821H64.396V15.1984C64.396 11.9178 61.4689 9.24898 57.8709 9.24898H53.4522L48.9302 1.83606C48.241 0.703172 46.9295 0 45.507 0C44.8441 0 44.1863 0.15589 43.6056 0.449711L26.2513 9.2488H6.86643C3.26841 9.2488 0.341309 11.9176 0.341309 15.1982V56.0504C0.341309 59.331 3.26841 61.9998 6.86643 61.9998H57.8709C61.4689 61.9998 64.396 59.331 64.396 56.0504V44.0528H67.6586V28.8821ZM57.8709 11.6286C59.8806 11.6286 61.5224 13.0207 61.7429 14.802H56.8386L54.9044 11.6286H57.8709ZM44.8753 2.5296C45.4873 2.21671 46.311 2.43555 46.6488 2.99135L53.8526 14.8009H20.671L44.8753 2.5296ZM61.7859 56.0504C61.7859 58.0185 60.0293 59.6202 57.8707 59.6202H6.86643C4.7079 59.6202 2.95123 58.0185 2.95123 56.0504V15.1984C2.95123 13.2303 4.7079 11.6286 6.86643 11.6286H21.5584L15.2995 14.8021H7.68212C6.96044 14.8021 6.37705 15.3352 6.37705 15.9921C6.37705 16.6489 6.96044 17.182 7.68212 17.182H10.6054H58.2899H61.7859V28.8832H52.2423C47.8103 28.8832 44.2034 32.172 44.2034 36.2128V36.7245C44.2034 40.7654 47.8106 44.0541 52.2423 44.0541H61.7859V56.0504ZM65.0485 41.6732H64.396H52.2423C49.2486 41.6732 46.8133 39.453 46.8133 36.7232V36.2115C46.8133 33.4819 49.2484 31.2615 52.2423 31.2615H64.396H65.0485V41.6732ZM56.2396 36.5651C56.2396 38.0168 54.9501 39.1923 53.3581 39.1923C51.7659 39.1923 50.4767 38.0166 50.4767 36.5651C50.4767 35.1136 51.7662 33.9379 53.3581 33.9379C54.9503 33.9377 56.2396 35.1145 56.2396 36.5651Z"/>
+                    </svg>
+                </div>
+                <div class="content_title">
+                    <div class="service_item-title">безопасная оплата</div>
+                    <div class="service_item-desc">100% безопасный платеж</div>
+                </div>
             </div>
-            <div class="service_content item3">
-                <div class="service_item-title">круглосуточная поддержка</div>
-                <div class="service_item-desc">онлайн поддержка 24/7</div>
+            <div class="service_content">
+                <div class="service_content-item">
+                    <svg width="64" height="62" viewBox="0 0 64 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                            <path d="M33.973 0C35.3723 0.20336 36.7919 0.33728 38.1679 0.62248C43.9424 1.82528 48.7308 4.30528 52.0646 8.57832C53.5832 10.5276 54.4821 12.6827 54.7439 15.0114C54.7875 15.3983 54.9272 15.5942 55.3781 15.743C57.8392 16.554 59.3432 18.409 59.3664 20.651C59.3926 23.0318 59.4392 25.415 59.3548 27.7934C59.2704 30.0923 57.9817 31.7837 55.4188 32.674C54.9708 32.8327 54.4588 32.8898 53.9672 32.922C53.3534 32.9642 52.7308 32.9369 52.1141 32.9344C49.8304 32.922 49.0421 32.4954 48.0152 30.6602C46.2784 34.7423 43.8552 38.3706 39.8668 41.1159C40.6872 42.8048 41.7868 44.3176 43.4537 45.4956C44.2217 46.0387 45.0974 46.3462 46.0835 46.505C50.9301 47.2862 55.6661 48.3526 60.0501 50.3564C61.8014 51.1574 62.9621 52.3057 63.2763 53.9722C63.5614 55.4826 63.7446 57.0053 63.9134 58.528C63.9948 59.2497 63.9424 59.9813 63.9424 60.7079C63.9424 61.6602 63.5643 61.9876 62.4588 61.9901C60.9839 61.9926 59.509 61.9901 58.0341 61.9901C39.2414 61.9901 20.4486 61.9876 1.6559 62C0.960631 62.0025 0.402085 61.8859 0.00354004 61.385C0.00354004 60.135 0.00354004 58.8826 0.00354004 57.6327C0.146085 56.6953 0.285722 55.7578 0.431176 54.8229C0.768631 52.6752 1.93227 51.031 4.35845 50.1382C4.96645 49.915 5.54536 49.6298 6.15336 49.4041C9.80427 48.0525 13.6181 47.1374 17.5337 46.5694C19.2384 46.3214 20.5243 45.6122 21.6239 44.5532C22.6886 43.5314 23.477 42.3708 24.0792 41.0936C23.7446 40.858 23.4101 40.6373 23.0901 40.3967C22.3599 39.8462 21.7344 39.06 20.8821 38.7872C20.0094 38.5094 18.9126 38.7227 17.9148 38.7252C14.6799 38.7277 12.629 37.3885 11.8377 34.7324C11.6661 34.1521 11.5614 33.5569 11.4392 33.0336C10.4763 32.9319 9.50754 32.9691 8.66099 32.7162C6.10099 31.9548 4.57663 30.0204 4.5679 27.6966C4.55627 25.4374 4.57081 23.1806 4.5679 20.9213C4.56499 18.4462 5.95554 16.6582 8.66972 15.7158C9.03918 15.5868 9.14099 15.4281 9.1759 15.1082C9.37372 13.2432 9.96718 11.4626 11.0261 9.81584C14.2494 4.80376 19.3897 1.9716 25.781 0.62248C27.1541 0.32984 28.5766 0.20336 29.9759 0C31.3083 0 32.6406 0 33.973 0ZM61.7228 60.0284C61.5686 58.4462 61.3883 56.9433 61.2864 55.4379C61.1584 53.5333 59.9861 52.3702 57.9759 51.5939C54.517 50.2597 50.9214 49.3148 47.2123 48.675C45.3446 48.3526 43.4799 48.0922 41.9614 46.9737C39.7824 45.3716 38.3715 43.3405 37.3214 41.106C37.0886 40.6075 37.4028 40.2504 37.8654 39.9106C38.9243 39.1369 40.021 38.3805 40.949 37.5001C43.5992 34.9903 45.1526 31.9523 46.4035 28.8077C47.8697 25.1199 48.1926 21.3082 47.6341 17.4567C47.2879 15.0586 46.3046 12.8414 44.5824 10.8946C39.3054 4.93024 29.1875 4.56568 23.1221 7.94096C18.5141 10.5053 16.5068 14.3046 16.1315 18.8257C15.7563 23.3542 16.6435 27.714 18.9272 31.8283C19.7941 33.3882 20.8966 34.8564 21.9119 36.3568C22.0312 36.5304 22.2814 36.7561 22.4734 36.761C24.1024 36.7933 25.7344 36.7784 27.3461 36.7784C27.7301 35.3747 28.4486 34.8787 30.0515 34.8663C30.6217 34.8614 31.1948 34.8638 31.765 34.8688C33.2254 34.8762 34.2523 35.6698 34.2552 36.7908C34.2581 37.9217 33.2515 38.7351 31.7941 38.7401C29.6064 38.7475 27.4159 38.7326 25.2283 38.7252C24.9868 38.7252 24.7483 38.7252 24.5068 38.7252C25.0188 39.2336 25.5541 39.5957 26.1097 39.9404C26.6392 40.2678 26.8283 40.6695 26.5752 41.2002C25.6384 43.1619 24.4312 44.9773 22.6304 46.4727C21.4494 47.4548 20.0763 48.117 18.4326 48.4022C16.4806 48.7394 14.5257 49.0966 12.6028 49.538C9.87118 50.1654 7.22099 50.9814 4.74536 52.1792C3.68936 52.6901 3.0639 53.4093 2.88063 54.4038C2.70318 55.3784 2.5199 56.358 2.43845 57.3401C2.36281 58.2329 2.4239 59.1306 2.4239 60.0284C22.1301 60.0284 41.8421 60.0284 61.7228 60.0284ZM52.4806 15.4033C52.4865 15.371 52.501 15.3314 52.4981 15.2917C52.4894 15.19 52.4748 15.0908 52.4603 14.9916C51.8785 11.0112 49.6355 7.79712 45.8944 5.43616C38.8457 0.98456 31.0959 0.35216 23.0086 2.99336C18.0341 4.61776 14.357 7.53424 12.373 11.8296C11.8348 12.9927 11.5294 14.2005 11.4334 15.5124C11.9744 15.5124 12.4544 15.4702 12.917 15.5248C13.3708 15.5769 13.8101 15.7257 14.2668 15.8373C16.5504 8.57336 21.9963 4.29536 30.8864 3.95312C40.7483 3.57616 47.029 7.76736 49.6646 15.7257C50.613 15.6166 51.5177 15.5149 52.4806 15.4033ZM13.7083 24.2569C13.7083 24.2569 13.7083 24.2569 13.7112 24.2569C13.7112 22.4614 13.7141 20.6658 13.7112 18.8728C13.7083 17.8039 13.2632 17.4369 11.9832 17.4369C11.5323 17.4369 11.0726 17.4865 10.6304 17.4319C8.84718 17.2137 6.93881 18.6397 6.88354 20.4625C6.81081 22.9425 6.83118 25.425 6.87772 27.905C6.9039 29.331 7.96281 30.5784 9.49299 30.9058C10.3221 31.0818 11.2384 30.9876 12.1141 30.9926C13.2457 31.0025 13.6995 30.6181 13.7054 29.6434C13.7141 27.8479 13.7083 26.0524 13.7083 24.2569ZM50.2319 24.2147C50.2319 24.2147 50.2319 24.2147 50.2348 24.2147C50.2348 26.0499 50.2348 27.8851 50.2319 29.7203C50.2319 30.2734 50.4414 30.8562 51.0872 30.9033C52.2741 30.9876 53.5483 31.0694 54.6654 30.7966C56.2537 30.4073 57.0246 29.2342 57.0654 27.8628C57.1352 25.425 57.1235 22.9822 57.0712 20.5418C57.0334 18.7984 55.2792 17.1988 53.2719 17.4245C52.8035 17.4766 52.3235 17.4294 51.8465 17.4294C50.6857 17.4319 50.2319 17.8213 50.2319 18.8306C50.229 20.6237 50.2319 22.4192 50.2319 24.2147ZM15.9075 30.9206C15.4828 31.3522 15.0232 31.9846 14.3774 32.4161C13.8886 32.741 13.7461 33.0014 13.8421 33.4899C14.3686 36.1286 15.8174 37.1752 19.1948 36.699C18.0806 34.7398 16.949 32.7534 15.9075 30.9206Z"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0">
+                                <rect width="64" height="62" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="content_title">
+                    <div class="service_item-title">круглосуточная поддержка</div>
+                    <div class="service_item-desc">онлайн поддержка 24/7</div>
+                </div>
             </div>
-            <div class="service_content item4">
-                <div class="service_item-title">бесплатная доставка</div>
-                <div class="service_item-desc">на заказ свыше 3 000&#8381</div>
+            <div class="service_content">
+                <div class="service_content-item">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M41.28 32C40.9333 32.0107 40.6 32.1547 40.3547 32.4053L33.32 39.4187L28.9867 35.0987C27.7733 33.8347 25.8133 35.7867 27.08 36.9973L32.368 42.272C32.8933 42.7973 33.7467 42.7973 34.2747 42.272L42.2613 34.3067C43.1413 33.4533 42.4933 32 41.2827 32H41.28ZM1.33333 42.6667H9.33333C10.072 42.6667 10.6667 43.2613 10.6667 44C10.6667 44.7387 10.072 45.3333 9.33333 45.3333H1.33333C0.594667 45.3333 0 44.7387 0 44C0 43.2613 0.594667 42.6667 1.33333 42.6667ZM1.33333 32H9.33333C10.072 32 10.6667 32.5947 10.6667 33.3333C10.6667 34.072 10.072 34.6667 9.33333 34.6667H1.33333C0.594667 34.6667 0 34.072 0 33.3333C0 32.5947 0.594667 32 1.33333 32ZM1.33333 21.3333H9.33333C10.072 21.3333 10.6667 21.928 10.6667 22.6667C10.6667 23.4053 10.072 24 9.33333 24H1.33333C0.594667 24 0 23.4053 0 22.6667C0 21.928 0.594667 21.3333 1.33333 21.3333ZM65.3333 50.6667C61.6667 50.6667 58.6667 53.6667 58.6667 57.3333C58.6667 61 61.6667 64 65.3333 64C69 64 72 61 72 57.3333C72 53.6667 69 50.6667 65.3333 50.6667ZM65.3333 53.3333C67.5573 53.3333 69.3333 55.1093 69.3333 57.3333C69.3333 59.5573 67.5573 61.3333 65.3333 61.3333C63.1093 61.3333 61.3333 59.5573 61.3333 57.3333C61.3333 55.1093 63.1093 53.3333 65.3333 53.3333ZM30.6667 50.6667C27 50.6667 24 53.6667 24 57.3333C24 61 27 64 30.6667 64C34.3333 64 37.3333 61 37.3333 57.3333C37.3333 53.6667 34.3333 50.6667 30.6667 50.6667ZM30.6667 53.3333C32.8907 53.3333 34.6667 55.1093 34.6667 57.3333C34.6667 59.5573 32.8907 61.3333 30.6667 61.3333C28.4427 61.3333 26.6667 59.5573 26.6667 57.3333C26.6667 55.1093 28.4427 53.3333 30.6667 53.3333ZM17.3333 16C15.1413 16 13.3333 17.808 13.3333 20V49.3333C13.3333 51.5253 15.1413 53.3333 17.3333 53.3333H22.6667C24.4693 53.36 24.4693 50.64 22.6667 50.6667H17.3333C16.5707 50.6667 16 50.096 16 49.3333V20C16 19.2373 16.5707 18.6667 17.3333 18.6667H52C52.7627 18.6667 53.3333 19.2373 53.3333 20V50.6667H38.6667C36.9067 50.6667 36.9387 53.36 38.6667 53.3333H57.3333C59.0933 53.3333 59.0773 50.6667 57.3333 50.6667H56V26.6667H67.272L77.3333 42.3893V49.3333C77.3333 50.096 76.7627 50.6667 76 50.6667H73.3333C71.5893 50.6667 71.5893 53.3333 73.3333 53.3333H76C78.192 53.3333 80 51.5253 80 49.3333V42C80 41.7467 79.928 41.4933 79.792 41.28L69.1253 24.6133C68.88 24.232 68.4587 24 68 24H56V20C56 17.808 54.192 16 52 16H17.3333Z"/>
+                    </svg>
+                </div>
+                <div class="content_title"><div class="service_item-title">бесплатная доставка</div>
+                    <div class="service_item-desc">на заказ свыше 3 000&#8381</div></div>
             </div>
         </div>
     </div>
@@ -153,25 +189,33 @@
                 <div class="slider_inner">
                     <div class="slider_item">
                         <div class="slider_title">Чехлы</div>
-                        <div class="slider_image"><img src="" alt=""></div>
+                        <div class="slider_image">
+                            <img src="img/_src/slider2_case.png" alt="Чехлы">
+                        </div>
                     </div>
                 </div>
                 <div class="slider_inner">
                     <div class="slider_item">
                         <div class="slider_title">Защитное стекло</div>
-                        <div class="slider_image"><img src="" alt=""></div>
+                        <div class="slider_image">
+                            <img src="img/_src/slider2_glass.png" alt="Защитное стекло">
+                        </div>
                     </div>
                 </div>
                 <div class="slider_inner">
                     <div class="slider_item">
                         <div class="slider_title">Зарядные устройства</div>
-                        <div class="slider_image"><img src="" alt=""></div>
+                        <div class="slider_image">
+                            <img src="img/_src/slider2_charge.png" alt="Зарядные устройства">
+                        </div>
                     </div>
                 </div>
                 <div class="slider_inner">
                     <div class="slider_item">
                         <div class="slider_title"></div>
-                        <div class="slider_image"><img src="" alt=""></div>
+                        <div class="slider_image">
+                            <img src="" alt="">
+                        </div>
                     </div>
                 </div>
                 <div class="slider_inner">
@@ -209,17 +253,53 @@
     </div>
     <div class="product">
         <div class="container">
+<!--            <div>-->
+<!--                <div class="product_title">Новинки этой недели</div>-->
+<!--                <div class="product_subtitle">Смотреть всё</div>-->
+<!--            </div>-->
             <section class="product_card">
                 <div class="product_menu menu-1">
-                    <div class="product_menu-title"></div>
+                    <div class="product_menu-title">Новинки этой недели</div>
                     <a href="#" class="product_menu-view">Смотреть все</a></div>
                 <div class="product_item">
                     <div class="product_item-sale">
                         <p>20%</p>
                     </div>
-                    <div class="product_item-title"></div>
-                    <div class="product_item-image"><img src="" alt=""></div>
-                    <div class="product_item-price"></div>
+                    <div class="product_item-title">Название товара, которое может быть длинным</div>
+                    <div class="product_item-image">
+                        <img src="#" alt="">
+                    </div>
+                    <div class="product_item-price">1200.00 &#8381</div>
+                    <div class="product_item-button">
+                        <button class="item_button-shop"></button>
+                        <button class="item_button-favorite"></button>
+                        <button class="item_button-view"></button>
+                    </div>
+                </div>
+                <div class="product_item">
+                    <div class="product_item-sale">
+                        <p>20%</p>
+                    </div>
+                    <div class="product_item-title">Название товара, которое может быть длинным</div>
+                    <div class="product_item-image">
+                        <img src="" alt="">
+                    </div>
+                    <div class="product_item-price">1200.00 &#8381</div>
+                    <div class="product_item-button">
+                        <button class="item_button-shop"></button>
+                        <button class="item_button-favorite"></button>
+                        <button class="item_button-view"></button>
+                    </div>
+                </div>
+                <div class="product_item">
+                    <div class="product_item-sale">
+                        <p>20%</p>
+                    </div>
+                    <div class="product_item-title">Название товара, которое может быть длинным</div>
+                    <div class="product_item-image">
+                        <img src="" alt="">
+                    </div>
+                    <div class="product_item-price">1200.00 &#8381</div>
                     <div class="product_item-button">
                         <button class="item_button-shop"></button>
                         <button class="item_button-favorite"></button>
@@ -228,16 +308,42 @@
                 </div>
             </section>
             <section class="product_card">
-                <div class="product_menu menu-1">
-                    <div class="product_menu-title"></div>
+                <div class="product_menu menu-2">
+                    <div class="product_menu-title">Новинки этой недели</div>
                     <a href="#" class="product_menu-view">Смотреть все</a></div>
                 <div class="product_item">
                     <div class="product_item-sale">
                         <p>20%</p>
                     </div>
-                    <div class="product_item-title"></div>
+                    <div class="product_item-title">Название товара, которое может быть длинным</div>
                     <div class="product_item-image"><img src="" alt=""></div>
-                    <div class="product_item-price"></div>
+                    <div class="product_item-price">1200.00 &#8381</div>
+                    <div class="product_item-button">
+                        <button class="item_button-shop"></button>
+                        <button class="item_button-favorite"></button>
+                        <button class="item_button-view"></button>
+                    </div>
+                </div>
+                <div class="product_item">
+                    <div class="product_item-sale">
+                        <p>20%</p>
+                    </div>
+                    <div class="product_item-title">Название товара, которое может быть длинным</div>
+                    <div class="product_item-image"><img src="" alt=""></div>
+                    <div class="product_item-price">1200.00 &#8381</div>
+                    <div class="product_item-button">
+                        <button class="item_button-shop"></button>
+                        <button class="item_button-favorite"></button>
+                        <button class="item_button-view"></button>
+                    </div>
+                </div>
+                <div class="product_item">
+                    <div class="product_item-sale">
+                        <p>20%</p>
+                    </div>
+                    <div class="product_item-title">Название товара, которое может быть длинным</div>
+                    <div class="product_item-image"><img src="" alt=""></div>
+                    <div class="product_item-price">1200.00 &#8381</div>
                     <div class="product_item-button">
                         <button class="item_button-shop"></button>
                         <button class="item_button-favorite"></button>
@@ -246,16 +352,42 @@
                 </div>
             </section>
             <section class="product_card">
-                <div class="product_menu menu-1">
-                    <div class="product_menu-title"></div>
+                <div class="product_menu menu-3">
+                    <div class="product_menu-title">Новинки этой недели</div>
                     <a href="#" class="product_menu-view">Смотреть все</a></div>
                 <div class="product_item">
                     <div class="product_item-sale">
                         <p>20%</p>
                     </div>
-                    <div class="product_item-title"></div>
+                    <div class="product_item-title">Название товара, которое может быть длинным</div>
                     <div class="product_item-image"><img src="" alt=""></div>
-                    <div class="product_item-price"></div>
+                    <div class="product_item-price">1200.00 &#8381</div>
+                    <div class="product_item-button">
+                        <button class="item_button-shop"></button>
+                        <button class="item_button-favorite"></button>
+                        <button class="item_button-view"></button>
+                    </div>
+                </div>
+                <div class="product_item">
+                    <div class="product_item-sale">
+                        <p>20%</p>
+                    </div>
+                    <div class="product_item-title">Название товара, которое может быть длинным</div>
+                    <div class="product_item-image"><img src="" alt=""></div>
+                    <div class="product_item-price">1200.00 &#8381</div>
+                    <div class="product_item-button">
+                        <button class="item_button-shop"></button>
+                        <button class="item_button-favorite"></button>
+                        <button class="item_button-view"></button>
+                    </div>
+                </div>
+                <div class="product_item">
+                    <div class="product_item-sale">
+                        <p>20%</p>
+                    </div>
+                    <div class="product_item-title">Название товара, которое может быть длинным</div>
+                    <div class="product_item-image"><img src="" alt=""></div>
+                    <div class="product_item-price">1200.00 &#8381</div>
                     <div class="product_item-button">
                         <button class="item_button-shop"></button>
                         <button class="item_button-favorite"></button>
