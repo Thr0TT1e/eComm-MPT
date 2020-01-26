@@ -135,7 +135,7 @@ header
 						&::after
 							display: block
 							content: ""
-							width: 0%
+							width: 0
 							border-bottom: 2px solid $colorGreen
 							transition: width .3s ease-in-out
 						&:hover::after
@@ -184,7 +184,6 @@ select
 
 .header_middle
 	.header_search
-		.select_search
 		select
 			width: 15vw
 			height: 70px
@@ -408,6 +407,24 @@ main
 					background-color: lighten($colorBlue, 30%)
 					transition: .4s
 					transform: scale(1.1)
+			.item_button-shop::after
+				font-family: Icomoon
+				content: "\e915"
+				color: $colorA
+				font-size: 1.2em
+				line-height: 50px
+			.item_button-favorite::after
+				font-family: Icomoon
+				content: "\e917"
+				color: $colorA
+				font-size: 1.4em
+				line-height: 50px
+			.item_button-view::after
+				font-family: Icomoon
+				content: "\e90e"
+				color: $colorA
+				font-size: 1.4em
+				line-height: 50px
 
 
 .product_menu, .product_item
@@ -458,6 +475,52 @@ p
 	font-size: 1.7em
 	z-index: 1
 
+footer
+	.footer_subscription
+		height: 151px
+		background: $colorNews
+		margin:
+			top: 4px
+			bottom: 8px
+		.container
+			display: grid
+			grid-template-columns: 1fr 1fr
+			grid-template-rows: 151px
+			align-items: center
+			color: $colorA
+			#subscription_text
+				display: grid
+				padding-left: 228px
+				position: relative
+				align-items: center
+				&::before
+					position: absolute
+					content: url("../img/_src/subscrab.svg")
+					left: 80px
+				#subscription_inscription
+					font-weight: bold
+			#subscription_field
+				input
+					height: 70px
+					&[type="button"]
+						width: 20%
+						color: $colorA
+					&[type="text"]
+						width: 75%
+						color: lighten($colorBlue, 30%)
+						padding:
+							left: 15px
+							right: 15px
+						&::placeholder
+							color: lighten($colorBlue, 30%)
+	nav
+		background-color: $colorGreen
+		.container
+			display: grid
+			grid-template-columns: repeat(4, 1fr)
+			grid-template-rows: 423px
+	.footer_info
+		background-color: $colorFooterInfo
 
 
 
